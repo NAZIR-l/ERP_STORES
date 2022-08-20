@@ -1,0 +1,287 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+body{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+    position:absolute;
+    width: 100%;
+    height: 631px;
+
+    display: flex;
+    justify-content: center;
+
+align-items: center;
+    
+    width: calc(100%);
+
+}
+section .imgBx{
+    position: relative;
+    width:50%;
+    height:calc(100% );
+}
+section .imgBx:before{
+content: '';
+position: absolute;
+top:-24px;
+left: 0;
+width: 100%;
+height: 100%;
+background:linear-gradient(225deg,#000000,#000000);
+z-index: 1;
+mix-blend-mode: screen;
+}
+section .imgBx img{
+position: absolute;
+top:-24px;
+/* padding-top:250px; */
+
+left: 0;
+padding-top: 113px;
+width: 100%;
+height:125%;
+object-fit: cover;
+}
+
+section .contentBx{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top:250px;
+/* padding-left:80px;
+position:relative;
+left:50px; */
+width: 50%;
+transform: scale(0.7);
+
+/* height: 100%; */
+}
+section .contentBx .formBx
+{
+    width: 50%;
+    border-radius: 10%;
+
+}
+section .contentBx .formBx h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    border-bottom:4px solid #00065c;
+    display: inline-block;
+    letter-spacing:1px;
+}
+section .contentBx .formBx .inputBx {
+margin-bottom: 20px;
+}
+section .contentBx .formBx .inputBx span{
+        color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom:5px;
+    display: inline-block;
+    letter-spacing:5px;
+}
+section .contentBx .formBx .inputBx input {
+width: 100%;
+padding: 10px 20px;
+outline: none;
+font-weight: 400;
+    border-bottom:4px solid #00065c;
+    font-size: 16px;
+    letter-spacing:1px;
+        color: #385590;
+background:transparent;
+border-radius:20px;
+box-shadow: 4px 1px 1px 1px;
+}
+section .contentBx .formBx .inputBx input[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(191 191 191);
+    outline: none;
+    font-weight: 400;
+        border-bottom:4px solid #00065c;
+        font-size: 16px;
+        letter-spacing:1px;
+            color: #385590;
+    background:transparent;
+    border-radius:20px;
+    box-shadow: 4px 1px 1px 1px;
+    }
+    section .contentBx .formBx .inputBx .btuo {
+        width: 100%;
+        padding: 10px 20px;
+        cursor: pointer;
+        background: rgb(191 191 191);
+        outline: none;
+        font-weight: 400;
+            border-bottom:4px solid #00065c;
+            font-size: 16px;
+            letter-spacing:1px;
+                color: #385590;
+        background:transparent;
+        border-radius:20px;
+        box-shadow: 4px 1px 1px 1px;
+        }
+    
+
+    section .contentBx .formBx .inputBx .button:hover{
+background:linear-gradient(225deg,hsl(236, 48%, 62%),#81a0d0);
+} 
+section .contentBx .formBx .Remember{
+    margin-bottom: 10px;
+    color: #385590;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 14px;
+    
+}
+section .contentBx .formBx .inputBx p{
+    color: #607d8b;
+
+}
+section .contentBx .formBx .inputBx p a{
+color: #385590;
+}
+section .contentBx .formBx h3{
+    color: #385590;
+    text-align: center;
+    margin:80px 0 10px ;
+    font-weight: 500;
+}
+section .contentBx .formBx .sci{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .contentBx .formBx .sci li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background:linear-gradient(225deg,#00065c,#81a0d0);
+    border-radius: 50%;
+    margin: 0 7px;
+    transition:0.5s ease;
+    cursor: pointer;
+}
+section .contentBx .formBx .sci li:hover{
+background:#00065c;
+transform: rotate(360deg);
+}
+section .contentBx .formBx .sci li img{
+transform: scale(0.5);
+filter: invert(1);
+}
+section .contentBx .formBx .sci li i{
+
+    border-radius: 50%;
+transition: 0.3s ease;
+transform:translateX(-25%)
+}
+section .contentBx .formBx .sci li i:hover{
+transform:rotate(360deg);
+}
+
+@media (max-width:768px) {
+    section .imgBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+
+    }
+    section .contentBx{
+           display: flex;
+    justify-content: center;
+    align-items: center;
+            width: 100%;
+        height: 100%;
+        z-index: 1;
+
+
+    }
+    section .contentBx .formBx{
+                width: 100%;
+                padding: 40px;
+                background-color:rgba(255 255 255 / 0.9);
+                margin: 50px;
+                z-index:10 ;
+    }
+    section .contentBx .formBx h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+    }
+}
+@media (max-width:320px) {
+    .formBx{
+        position: absolute;
+        /* left: 0; */
+        /* top: 10px; */
+        width: 10px;
+   
+   }
+   .imgBx{
+    height: 130%;
+    width: 180%;
+   }
+   .contentBx{
+    position: absolute;
+    top: 100px;
+   }
+}
+
+/* @media (max-height:550px) {
+    section .contentBx .formBx
+{
+    padding-top: 350px;
+}
+  section .imgBx{
+       
+        width: 100%;
+        height: 750px;
+
+    }
+
+} */
+/* @media (max-height:150px ) {
+    section .contentBx .formBx
+{
+    padding-top: 550px;
+}
+  section .imgBx{
+
+        width: 100%;
+        height: 630px;
+
+    }
+
+} */
+/* @media (max-height:400px ) {
+    section .contentBx .formBx
+{
+    padding-top: 350px;
+}
+  section .imgBx{
+
+        width: 100%;
+        height: 630px;
+
+    }
+
+}
+ */
+
